@@ -29,7 +29,8 @@ switch (v.getId()){
     break;
 
     case R.id.button2:
-
+        Intent sql = new Intent(MainActivity.this, SQliteMain.class);
+        startActivity(sql);
         break;
 
     case R.id.button3:

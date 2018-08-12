@@ -45,13 +45,13 @@ final String SAVED_TEXT = "saved_text";
         sp= getSharedPreferences("MyTextFromEditText", MODE_PRIVATE);
         String saved_text = sp.getString(SAVED_TEXT, "");
         etText.setText(saved_text);
-        Toast.makeText(this, "Text saved.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Text loaded.", Toast.LENGTH_SHORT).show();
 
     }
 
     private void saveText() {
 
-        sp = getPreferences(MODE_PRIVATE);
+        sp = getSharedPreferences("MyTextFromEditText", MODE_PRIVATE);
         SharedPreferences.Editor et = sp.edit();
         et.putString(SAVED_TEXT, etText.getText().toString());
         et.commit();

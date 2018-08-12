@@ -16,20 +16,27 @@
     android:text="Данные"/>
 
 <LinearLayout
+
+    android:padding="5dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <Button
+        android:background="@drawable/blue_button"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-android:layout_marginLeft="5dp"
+
         android:text="SharedPreferences" />
 
     <Button
-        android:paddingLeft="5dp"
+        android:background="@drawable/blue_button"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,8 +46,11 @@ android:layout_marginLeft="5dp"
         android:text="SQLite" />
 
     <Button
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="@drawable/blue_button"
         android:id="@+id/button3"
-        android:layout_width="113dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
