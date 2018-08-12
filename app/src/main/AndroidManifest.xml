@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="by.kuchinsky.alexandr.krest">
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ShPreferences" />
-        <activity android:name=".SQliteMain"></activity>
+        <activity android:name=".SQliteMain" />
+        <activity android:name=".RoomActivity"></activity>
     </application>
 
 </manifest>

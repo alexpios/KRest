@@ -34,7 +34,8 @@ switch (v.getId()){
         break;
 
     case R.id.button3:
-
+        Intent room = new Intent(MainActivity.this, RoomActivity.class);
+        startActivity(room);
         break;
 
 }
